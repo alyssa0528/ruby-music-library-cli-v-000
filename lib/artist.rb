@@ -41,8 +41,8 @@ class Artist
     end
   end
   #can also write:
-  song.artist = self unless song.artist
-  self.songs << song unless self.songs.include?(song)
+  #song.artist = self unless song.artist
+  #self.songs << song unless self.songs.include?(song)
 
   def genres
     songs.collect {|song| song.genre}.uniq # loop through the artist's songs array
